@@ -155,12 +155,16 @@ body {
 .item-minus,
 .item-plus {
   width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: none;
+  background-color: unset;
   cursor: pointer;
   font-size: 20px;
   color: #b9b9b9;
+}
+
+.item-count {
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .order-summary {
@@ -169,7 +173,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 
   padding: 35px 30px;
   background-color: #0066ff;
@@ -178,13 +182,16 @@ body {
 
 .sub-total-info,
 .total-amount,
-.shipping-details {
+.shipping-details,
+.promotion {
   display: grid;
   grid-template-columns: 1fr auto;
 }
+
 .sub-total-info,
 .shipping-details,
-.total-amount {
+.total-amount,
+.promotion {
   margin-bottom: 10px;
 }
 
@@ -234,7 +241,7 @@ body {
   height: 50px;
   padding: 0 10px;
   border-radius: 5px;
-  border: 1px solid #b0b0b0;
+  border: 1px solid #c4c2c2;
   font-size: 18px;
   text-transform: uppercase;
   color: #444;
@@ -260,4 +267,24 @@ body {
 
 .btn-discount:hover {
   background-color: #323947;
+}
+
+/* Toastify */
+
+.Toastify__toast--info,
+.Toastify__toast--success,
+.Toastify__toast--warning,
+.Toastify__toast--error {
+  font-size: 13px;
+}
+
+/* Sweetalert2 */
+.swal2-popup {
+  font-size: 0.6rem !important;
+  font-family: sans-serif;
+}
+
+.swal2-title {
+  font-size: 1.4em !important;
+  font-weight: normal;
 }
